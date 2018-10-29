@@ -37,12 +37,16 @@
   "scripts": {
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest",
+    "test": "jest --coverage",
     "tdd": "npm test -- --watch"
   },
   "repository": "git@github.com:OsomePteLtd/osome-address.git",
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "html",
+      "lcov"
+    ]
   },
   "license": "MIT"
 }
