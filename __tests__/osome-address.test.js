@@ -1,9 +1,13 @@
 const osomeAddress = require('../scr/index')
 
 describe('osome address', () => {
-  it('yep is osome address', () => {
-    const expected = 'osome address'
-
-    expect(osomeAddress).toEqual(expected)
+  it('yep, it\'s osome address', () => {
+    expect(osomeAddress.houseNumber).toEqual('80')
+    expect(osomeAddress.streetName).toEqual('Robinson Road')
+    expect(osomeAddress.floor).toEqual('08')
+    expect(osomeAddress.apartment).toEqual('01')
+    expect(osomeAddress.country).toEqual('Singapore')
+    expect(osomeAddress.zipCode).toEqual('068898')
+    expect(osomeAddress.fullAddress).toEqual('80 Robinson Road, #08-01, Singapore 068898')
   })
 })

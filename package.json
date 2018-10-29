@@ -37,7 +37,8 @@
   "scripts": {
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "tdd": "npm test -- --watch"
   },
   "repository": "git@github.com:OsomePteLtd/osome-address.git",
   "jest": {
