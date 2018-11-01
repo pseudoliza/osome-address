@@ -1,4 +1,4 @@
-const osomeAddress = require('../scr/index')
+const osomeAddress = require('../src/index')
 
 describe('osome address', () => {
   it('yep, it\'s osome address', () => {
